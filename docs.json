@@ -68,5 +68,13 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "background": {
+    "color": {
+      "dark": "#161515"
+    }
+  },
+  "appearance": {
+    "default": "dark"
   }
 }
