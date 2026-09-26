@@ -1,0 +1,32 @@
+:root.dark {
+  --ev-bg: #161515;
+  --ev-chrome: #111010;
+  --ev-surface: #1c1a1a;
+  --ev-surface-2: #252222;
+  --ev-surface-3: #2e2a2a;
+  --ev-border: #3a3533;
+  --ev-separator: #2a2726;
+}
+
+html.dark body { background-color: var(--ev-bg); }
+
+/* chrome: sidebar i topbar, linie tylko tutaj */
+html.dark #sidebar,
+html.dark #sidebar-content { background-color: var(--ev-chrome); border-right: 1px solid var(--ev-separator); }
+html.dark #navbar,
+html.dark #navbar > div { background-color: var(--ev-chrome); border-bottom: 1px solid var(--ev-border); }
+
+/* surface: kafle i pola */
+html.dark .card,
+html.dark input,
+html.dark textarea,
+html.dark pre { background-color: var(--ev-surface); }
+
+/* surface-secondary: hover, aktywna pozycja menu */
+html.dark #sidebar a:hover,
+html.dark #sidebar a[aria-current="page"],
+html.dark .card:hover { background-color: var(--ev-surface-2); }
+
+/* surface-tertiary: scrollbar */
+html.dark ::-webkit-scrollbar-thumb { background-color: var(--ev-surface-3); }
+html.dark * { scrollbar-color: var(--ev-surface-3) transparent; }
